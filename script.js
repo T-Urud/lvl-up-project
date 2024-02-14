@@ -3,7 +3,7 @@ const pointsAvailableContainer = document.getElementById("pointsAvailable");
 
 let addBtn = document.querySelectorAll(".add");
 let reduceBtn = document.querySelectorAll(".reduce");
-let counterSpan = document.querySelectorAll(".valueAttribute");
+let valueAttribute = document.querySelectorAll(".valueAttribute");
 
 let lvl;
 let pointsAvailable;
@@ -21,8 +21,9 @@ const points = () => {
 };
 points();
 
+let counterSpan = valueAttribute < span.value;
+console.log(counterSpan);
 for (i = 0; i < addBtn.length; i++) {
-  counterSpan.value = 12;
   addBtn[i].addEventListener("click", () => {
     counterSpan.value++;
     counterSpan.textContent = `${counterSpan.value}`;
